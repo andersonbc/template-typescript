@@ -5,6 +5,7 @@ jobs:
   build-and-test:
     executor:
       name: node/default
+    resource_class: small
     steps:
       - checkout
       - node/with-cache:
